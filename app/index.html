@@ -26,14 +26,14 @@
 
 </head>
 
-<body id="home">
+<body>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
 
-<div class="container-fluid start content">
+<div id="home" class="container-fluid start content">
     <section class="container content" id="top">
 
         <div class="row">
@@ -92,9 +92,9 @@
 
 
     <div class="row mocks">
-        <img class="col-sm-4" src="img/mocks/iphone_04.jpg">
-        <img class="col-sm-4" src="img/mocks/iphone_04.jpg">
-        <img class="col-sm-4" src="img/mocks/iphone_04.jpg">
+        <img class="col-sm-4 img-responsive" src="img/mocks/iphone_04.jpg">
+        <img class="col-sm-4 img-responsive" src="img/mocks/iphone_04.jpg">
+        <img class="col-sm-4 img-responsive" src="img/mocks/iphone_04.jpg">
     </div>
 </div>
 <div class="content" id="project">
@@ -189,19 +189,19 @@ Will die ganze Welt sehen und dafür so wenig wie möglich bezahlen. Notfalls sc
         <div class="container">
             <div class="row">
                 <form action="action.php" id="forms">
-                    <div class="col-xs-4">
+                    <div class="col-sm-4">
                         <input type="text" placeholder="Name" id="name" name="name">
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-sm-4">
                         <input type="text" placeholder="Email" id="email" name="email">
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-sm-4">
                         <input type="text" placeholder="Subject" id="subject" name="subject">
                     </div>
                     <div class="col-xs-12">
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         <input type="hidden" name="submit">
-                        <input type="submit" value="send message">
+                        <input class="col-xs-12 col-sm-4" type="submit" value="send message">
                     </div>
                     <div class="clearfix"></div>
                     <div class="notification"></div>

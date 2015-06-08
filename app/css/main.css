@@ -627,7 +627,7 @@ ul li a:hover {
     text-decoration: none;
 }
 
-ul li a:hover, ul li a.active {
+ul li a:hover, ul li.active a {
     color: #f64747;
 }
 
@@ -641,4 +641,8 @@ ul li a {
 
 a:focus {
     text-decoration: none;
+}
+
+.mocks img {
+    margin-bottom: 15px;
 }
