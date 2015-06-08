@@ -23,12 +23,10 @@
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/modernizr-2.6.2.min.js"></script>
-
 
 </head>
 
-<body>
+<body id="home">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -57,7 +55,7 @@
             <div class="col-xs-12">
                 <nav id="navigation" class="column ten hide-on-mobile">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#app">Die App</a></li>
                         <li><a href="#project">Projekt</a></li>
                         <li><a href="#team">Team</a></li>
@@ -100,16 +98,17 @@
         <img class="col-sm-4" src="img/mocks/iphone_04.jpg">
     </div>
 </div>
+<div id="project">
+    <div class="container-fluid quote">
+        <div class="container">
 
-<div class="container-fluid quote" id="project">
-    <div class="container">
-
-        <div class="row">
-            <h3>»Locator« ist von Studenten der Konstanzer Hochschule in einem
-                interdisziplinären Projekt der Fachbereiche Kommunikationsdesign und Informatik entwickelt worden. Damit
-                Fremde zu Freunden werden.</h3>
+            <div class="row">
+                <h3>»Locator« ist von Studenten der Konstanzer Hochschule in einem
+                    interdisziplinären Projekt der Fachbereiche Kommunikationsdesign und Informatik entwickelt worden.
+                    Damit
+                    Fremde zu Freunden werden.</h3>
+            </div>
         </div>
-
     </div>
 </div>
 
@@ -175,12 +174,13 @@ Will die ganze Welt sehen und dafür so wenig wie möglich bezahlen. Notfalls sc
 
 </div>
 
+<div id="contact-us">
+    <div class="container-fluid kontakt-teaser">
+        <div class="row">
+            <h3 class="center">deine Meinung interessiert uns</h3>
 
-<div class="container-fluid kontakt-teaser" id="contact-us">
-    <div class="row">
-        <h3 class="center">deine Meinung interessiert uns</h3>
-
-        <p class="grey center">Wir freuen uns über deinen Kommentar zu Locator!</p>
+            <p class="grey center">Wir freuen uns über deinen Kommentar zu Locator!</p>
+        </div>
     </div>
 </div>
 
@@ -237,6 +237,8 @@ Will die ganze Welt sehen und dafür so wenig wie möglich bezahlen. Notfalls sc
 
 <script src="components/jquery/dist/jquery.min.js"></script>
 <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

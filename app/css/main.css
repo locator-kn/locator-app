@@ -429,7 +429,7 @@ img.logo {
     background-color: #f3f3f3;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin: 80px 0;
+    margin-bottom: 80px;
 }
 
 .kontakt-teaser h3:after {
@@ -514,7 +514,7 @@ h2.section-title {
 }
 
 .container.description {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .mocks {
@@ -617,8 +617,6 @@ nav ul {
     background: url('../img/bg/tollesbildwow_51.jpg');
     background-size: cover;
     background-position: bottom;
-    margin-top: 80px;
-
     font-weight: 300;
     color: white;
     font-size: 34px;
@@ -631,4 +629,12 @@ ul li a:hover {
 
 ul li a:hover {
     color: #f64747;
+}
+
+#project, #contact-us {
+    padding-top: 130px;
+}
+
+a:focus {
+    text-decoration: none;
 }
