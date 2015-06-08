@@ -364,6 +364,7 @@ img.logo {
     border-left: 7px solid white;
     border-right: 7px solid white;
     padding: 15px;
+    padding-top: 100px;
 }
 
 .team {
