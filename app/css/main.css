@@ -632,6 +632,11 @@ nav ul {
     text-align: center;
 }
 
+.quote h3 {
+    line-height: 130%;
+    margin-bottom:
+}
+
 ul li a:hover {
     text-decoration: none;
 }
@@ -665,10 +670,11 @@ a:focus {
     border: 1px solid black;
 }
 
-.quote h3 {
-    line-height: 130%;
+@media (max-width: 1199px) {
+    .team .member .overlay {
+        padding-top: 30px;
+    }
 }
-
 
 @media (max-width: 767px) {
     .menu-wrapper li {
