@@ -45,7 +45,7 @@ $(document).ready(function () {
             offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
         $('html, body').stop().animate({
             scrollTop: offsetTop
-        }, 1000);
+        }, 800);
         e.preventDefault();
     });
 

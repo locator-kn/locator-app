@@ -672,6 +672,11 @@ a:focus {
     }
 
     .start {
-        min-height: calc(100vh - 50px);
+        min-height: 100vh;
+    }
+
+    .menu-wrapper {
+        position: fixed !important;
+        top: 0;
     }
 }
