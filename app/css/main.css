@@ -556,6 +556,7 @@ h2.section-title {
 nav ul {
     float: right;
     margin: 0;
+    padding: 0;
 }
 
 .footer {
@@ -563,6 +564,7 @@ nav ul {
     min-height: 180px;
     margin-top: 50px;
     color: white;
+    padding-bottom: 30px;
 }
 
 .footer a {
@@ -609,7 +611,13 @@ nav ul {
 }
 
 .footer .separator {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+.footer .impressum {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .quote {
@@ -636,6 +644,11 @@ ul li a {
     display: block;
 }
 
+.impressum:hover {
+    text-decoration: none;
+    color: #f64747;
+}
+
 #project, #contact-us {
     padding-top: 130px;
 }
@@ -646,4 +659,19 @@ a:focus {
 
 .mocks img {
     margin-bottom: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    border: 1px solid black;
+}
+
+
+@media (max-width: 767px) {
+    .menu-wrapper li {
+        width: 100%;
+    }
+
+    .start {
+        min-height: calc(100vh - 50px);
+    }
 }
