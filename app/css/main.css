@@ -391,7 +391,7 @@ img.logo {
 }
 
 .head {
-    margin: 50px 0;
+    margin: 70px 0;
 }
 
 .team .overlay h2 {
@@ -623,4 +623,12 @@ nav ul {
     color: white;
     font-size: 34px;
     text-align: center;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #f64747;
 }
