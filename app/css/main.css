@@ -665,6 +665,10 @@ a:focus {
     border: 1px solid black;
 }
 
+.quote h3 {
+    line-height: 130%;
+}
+
 
 @media (max-width: 767px) {
     .menu-wrapper li {
