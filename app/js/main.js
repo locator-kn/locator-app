@@ -5,6 +5,8 @@ $(document).ready(function () {
 
     fixedMenu();
 
+    console.info( $('#navigation li a'));
+
     $(document).scroll(function () {
         fixedMenu();
     });
@@ -21,4 +23,11 @@ $(document).ready(function () {
             menu.removeClass('fixed');
         }
     }
+
+    $("#navigation li a").click(function () {
+        $("#navigation li a.active").removeClass('active');
+        $(this).addClass('active');
+    });
+
+
 });
