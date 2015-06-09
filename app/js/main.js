@@ -27,7 +27,7 @@ $(document).ready(function () {
     // Cache selectors
     var lastId,
         topMenu = $("#navigation"),
-        topMenuHeight = topMenu.outerHeight(),
+        topMenuHeight = 0,
     // All list items
         menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
