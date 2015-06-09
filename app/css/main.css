@@ -695,6 +695,31 @@ a:focus {
     text-transform: uppercase;
 }
 
+ul {
+    list-style: none;
+}
+
+.footer ul li {
+    float: left;
+    padding: 20px;
+}
+
+img.social {
+    height: 25px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.footer ul {
+    float: left;
+    padding: 0;
+}
+
+.social-wrapper {
+    width: 350px;
+    margin: 0 auto;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
