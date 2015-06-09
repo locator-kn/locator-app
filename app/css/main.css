@@ -670,6 +670,31 @@ a:focus {
     border: 1px solid black;
 }
 
+.project-description .col-sm-4 {
+    min-height: 270px;
+    padding: 0 30px;
+}
+
+.project-description .border {
+    border-right: 1px solid #e6e6e6;
+}
+
+.project-description {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 300;
+}
+
+.project-description .desc {
+    color: #808080;
+    font-size: 15px;
+}
+
+.project-description h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
