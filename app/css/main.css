@@ -720,6 +720,33 @@ img.social {
     margin: 0 auto;
 }
 
+.registration-form {
+    width: 100%;
+}
+
+.registration-submit {
+    width: 100%;
+}
+
+.registration-container {
+    padding-top:100px;
+    float:left;
+    width: 100%
+}
+
+.registration {
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url('../img/bg/imm012_11.jpg');
+    background-size: cover;
+    background-position: bottom;
+    font-weight: 300;
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
