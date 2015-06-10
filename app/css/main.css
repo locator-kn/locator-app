@@ -293,6 +293,8 @@ textarea {
 body {
     font-family: 'Signika', sans-serif;
     background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .responsive-img {
