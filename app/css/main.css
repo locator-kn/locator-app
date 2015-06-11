@@ -715,8 +715,8 @@ img.social {
 }
 
 .social-wrapper {
-    width: 350px;
-    margin: 0 auto;
+    width: 251px;
+    float: left;
 }
 
 .registration-form {
