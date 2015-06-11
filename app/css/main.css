@@ -699,7 +699,6 @@ ul {
 }
 
 .footer ul li {
-    float: left;
     padding: 20px;
 }
 
@@ -712,21 +711,21 @@ img.social {
 .footer ul {
     float: left;
     padding: 0;
-}
-
-.social-wrapper {
     width: 100%;
-    float: left;
 }
 
 .social-wrapper ul {
-   text-align: center;
+    text-align: center;
+}
+
+.social-wrapper {
+    float: left;
     width: 100%;
 }
 
 .footer ul li {
     display: inline-block;
-    width: 18.666667%;
+    width: auto;
 }
 
 .registration-form {
@@ -770,7 +769,6 @@ img.social {
 
 @media (max-width: 767px) {
     .footer ul li {
-        display: inline-block;
         width: 100%;
     }
 
