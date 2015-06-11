@@ -715,8 +715,18 @@ img.social {
 }
 
 .social-wrapper {
-    width: 251px;
+    width: 100%;
     float: left;
+}
+
+.social-wrapper ul {
+   text-align: center;
+    width: 100%;
+}
+
+.footer ul li {
+    display: inline-block;
+    width: 18.666667%;
 }
 
 .registration-form {
@@ -759,6 +769,11 @@ img.social {
 }
 
 @media (max-width: 767px) {
+    .footer ul li {
+        display: inline-block;
+        width: 100%;
+    }
+
     .menu-wrapper li {
         width: 100%;
     }
