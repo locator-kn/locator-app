@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     var startheight = $('.start').height();
-    var menu = $('.menu-wrapper')
+    var menu = $('.menu-wrapper');
 
     fixedMenu();
 
@@ -21,7 +21,6 @@ $(document).ready(function () {
             menu.removeClass('fixed');
         }
     }
-
 
 
     // Cache selectors
