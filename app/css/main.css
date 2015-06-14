@@ -737,8 +737,15 @@ img.social {
 }
 
 .registration-container {
-    padding-top: 280px;
-    width: 100%;
+     padding-top: 100px;
+     width: 100%;
+ }
+
+.registration-container input {
+    background-color: #f3f3f3;
+    height: 48px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 30px;
 }
 
 .registration-header {
