@@ -734,6 +734,7 @@ img.social {
 
 .registration-submit {
     width: 100%;
+    cursor: pointer;
 }
 
 .registration-container {
