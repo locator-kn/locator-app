@@ -132,6 +132,10 @@ $(document).ready(function () {
     });
 
     // registration
+
+    var errorBorder = {border: "1px solid #FF0000"};
+    var normalBorder = {border: "1px solid #e6e6e6"}
+
     $(".registration-submit").click(function (event) {
         event.preventDefault();
 
@@ -145,7 +149,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: '/project/register',
+            url: 'http://localhost:3030/mail/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
@@ -177,13 +181,62 @@ $(document).ready(function () {
 
     }
 
+    // pseudo registration
     $(".registration-submit-bottom").click(function (e) {
-        var offsetTop = $('#').offset().top - topMenuHeight + 1;
         $('html, body').stop().animate({
-            scrollTop: offsetTop
+            scrollTop: 0
         }, 800);
         e.preventDefault();
     });
+
+
+    // feedback
+    $(".feedback-submit").click(function (event) {
+        event.preventDefault();
+
+        var $form = $("#forms");
+
+        var name = $form.find('input[name="name"]');
+        var mail = $form.find('input[name="email"]');
+        var subject = $form.find('input[name="subject"]');
+        var message = $form.find('textarea[name="message"]');
+
+        if(!name.val()) {
+            name.css(errorBorder);
+            return;
+        } else if (!mail.val() || mail.val().test(/\S+@\S+\.\S+/)) {
+            mail.css(errorBorder);
+            return;
+        } else if (!subject.val()) {
+            // allow empty subject
+        } else if (!message.val()){
+            message.css(errorBorder);
+            return;
+        }
+        var feedback = {
+            name: name.val(),
+            mail: mail.val(),
+            subject: subject.val(),
+            message: message.val()
+        };
+        console.log(feedback);
+        //$(".success-feedback").fadeIn("thanks");
+        $(".error-feedback").fadeIn("generic");
+
+        return;
+
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3030/mail/feedback',
+            contentType: 'application/json',
+            data: JSON.stringify(register),
+            success: registrationSuccess,
+            error: registrationError,
+            processData: false
+        });
+    });
+
 
 
 });
