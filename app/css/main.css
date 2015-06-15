@@ -311,7 +311,7 @@ body {
 
 .logo-container {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .logo-container h2 {
@@ -738,7 +738,7 @@ img.social {
 }
 
 .registration-container {
-     padding-top: 100px;
+     padding-top: 70px;
      width: 100%;
  }
 
@@ -791,5 +791,21 @@ img.social {
     .menu-wrapper {
         position: fixed !important;
         top: 0;
+    }
+    .logo-container {
+        margin-top: 20%;
+    }
+    .registration-container {
+        padding-top: 30px;
+    }
+    .registration-header {
+
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 467px) {
+    .logo-container {
+        margin-top: 25%;
     }
 }
