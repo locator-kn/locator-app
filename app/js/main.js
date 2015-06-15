@@ -149,7 +149,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3030/mail/register',
+            url: '/project/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
