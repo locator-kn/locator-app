@@ -149,7 +149,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: '/project/register',
+            url: 'http://localhost:3030/mail/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
@@ -201,42 +201,61 @@ $(document).ready(function () {
         var subject = $form.find('input[name="subject"]');
         var message = $form.find('textarea[name="message"]');
 
-        if(!name.val()) {
+        name.css(normalBorder);
+        mail.css(normalBorder);
+        message.css(normalBorder);
+
+
+        if (!name.val()) {
             name.css(errorBorder);
             return;
-        } else if (!mail.val() || mail.val().test(/\S+@\S+\.\S+/)) {
+        } else if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
             mail.css(errorBorder);
+            return;
+        } else if (!message.val()) {
+            message.css(errorBorder);
             return;
         } else if (!subject.val()) {
             // allow empty subject
-        } else if (!message.val()){
-            message.css(errorBorder);
-            return;
         }
+
         var feedback = {
             name: name.val(),
             mail: mail.val(),
-            subject: subject.val(),
+            subject: subject.val() || 'empty subject',
             message: message.val()
         };
-        console.log(feedback);
-        //$(".success-feedback").fadeIn("thanks");
-        $(".error-feedback").fadeIn("generic");
-
-        return;
-
 
         $.ajax({
             type: 'POST',
             url: 'http://localhost:3030/mail/feedback',
             contentType: 'application/json',
-            data: JSON.stringify(register),
-            success: registrationSuccess,
-            error: registrationError,
+            data: JSON.stringify(feedback),
+            success: feedbackSuccess,
+            error: feedbacknError,
             processData: false
         });
     });
 
+    function feedbackSuccess() {
+        $(".success-feedback").fadeIn("thanks");
+        var $form = $("#forms");
+        $form.find('input[name="name"]').val('');
+        mail = $form.find('input[name="email"]').val('');
+        subject = $form.find('input[name="subject"]').val('');
+        message = $form.find('textarea[name="message"]').val('');
+        setTimeout(function() {
+            $(".success-feedback").fadeOut("thanks");
+        }, 3000)
+    }
+
+    function feedbacknError(resp) {
+        $(".error-feedback").fadeIn("generic");
+        setTimeout(function() {
+            $(".error-feedback").fadeOut("thanks");
+        }, 3000)
+
+    }
 
 
 });
