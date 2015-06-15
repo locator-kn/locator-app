@@ -622,11 +622,11 @@ nav ul {
 .quote {
     padding-top: 60px;
     padding-bottom: 60px;
-    background: url('../img/bg/tollesbildwow_51.jpg');
     background-size: cover;
+    background-color: #f3f3f3;;
     background-position: bottom;
     font-weight: 300;
-    color: white;
+    color: black;
     font-size: 34px;
     text-align: center;
 }
