@@ -17,7 +17,7 @@ $(document).ready(function () {
         "Am liebsten bereist er St&auml;dte. Die sch&ouml;nsten sind mit viel Wasser drum herum. So z&auml;hlen Venedig, Hamburg, Amsterdam und nat&uuml;rlich Konstanz zu seinen absoluten Favoriten.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/julien.jpg\" alt=\"Julien Kuny\"><div class=\"overlay\"><h2>Julien Kuny (22), <br> Kommunikationsdesigner</h2><span class=\"desc\">" +
-        "Ist von der eigenen Hausparty abgehauen um mit dem bestem Freund ans italienischem Mittelmeer zu fahren. Neue St&auml;dte und Orte, besonders die am Wasser gelegenen ziehen ihn an, sei es London, Amsterdam, Hamburg oder Konstanz.</span></div></div>",
+        "Ist von der eigenen Hausparty abgehauen um mit dem bestem Freund ans italienische Mittelmeer zu fahren. Neue St&auml;dte und Orte, besonders die am Wasser gelegenen ziehen ihn an, sei es London, Amsterdam, Hamburg oder Konstanz.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/pascal.jpg\" alt=\"Pascal R&uuml;ttenauer\"><div class=\"overlay\"><h2>Pascal \"Ayin\" R&uuml;ttenauer (23), Kommunikationsdesigner</h2><span class=\"desc\">" +
         "Entspricht voll dem Cliche, dass alle Asiaten Kung Fu k&ouml;nnen. Hat Konstanz erst lieben gelernt als er von einem Jahr Shanghai zur&uuml;ckkam. W&auml;re am liebsten mehr in Hong Kong oder auf Reisen. In der Zwischenzeit &uuml;bt er flei&szlig;ig weiter sein Kame-Hame-Ha... bisher vergeblich...</span></div></div>",
@@ -134,20 +134,18 @@ $(document).ready(function () {
     // registration
     $(".registration-submit").click(function (event) {
         event.preventDefault();
-        console.log(event);
-
 
         var $form = $("#registration");
 
-        var register= {
-            name : $form.find('input[name="name"]').val(),
-            mail : $form.find('input[name="email"]').val()
+        var register = {
+            name: $form.find('input[name="name"]').val(),
+            mail: $form.find('input[name="email"]').val()
         };
 
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3030/register', // TODO: change to relative later
+            url: '/project/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
@@ -157,12 +155,35 @@ $(document).ready(function () {
     });
 
     function registrationSuccess() {
-        console.log('Success')
+        $("#registration").fadeOut(function () {
+            $(".success").fadeIn("thanks");
+        });
+
     }
 
-    function registrationError() {
-        console.log('Error')
+    function registrationError(resp) {
+        var err = (resp.status === 409 ? 'conflict' : 'generic');
+
+        $("#registration").fadeOut(function () {
+            $(".error").addClass(err);
+        });
+
+        setTimeout(function () {
+            $(".error").removeClass(err).fadeOut(function () {
+                $("#registration").fadeIn();
+            });
+
+        }, 2000)
+
     }
+
+    $(".registration-submit-bottom").click(function (e) {
+        var offsetTop = $('#').offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 800);
+        e.preventDefault();
+    });
 
 
 });
