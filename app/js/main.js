@@ -134,7 +134,7 @@ $(document).ready(function () {
     // registration
 
     var errorBorder = {border: "1.5px solid #FF0000"};
-    var normalBorder = {border: "1px solid #e6e6e6"}
+    var normalBorder = {border: "1px solid #e6e6e6"};
 
     $(".registration-submit").click(function (event) {
         event.preventDefault();
@@ -163,7 +163,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3030/mail/register',
+            url: '/mail/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
@@ -242,7 +242,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3030/mail/feedback',
+            url: '/mail/feedback',
             contentType: 'application/json',
             data: JSON.stringify(feedback),
             success: feedbackSuccess,
