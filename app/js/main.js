@@ -13,11 +13,11 @@ $(document).ready(function () {
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/julian.jpg\" alt=\"Julian Pellduat\"><div class=\"overlay\"><h2>Julian Pellduat (25),<br> Kommunikationsdesigner</h2><span class=\"desc\">" +
         "Hat f&uuml;r den Sommerurlaub kein Geld da er viel lieber im Winter in die Berge f&auml;hrt um Snowboard zu fahren. </span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/benedikt.jpg\" alt=\"Benedikt Schnurr\"><div class=\"overlay\"><h2>Benedikt Schnurr (25), <br> Kommunikationsdesigner</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/benedikt.jpg\" alt=\"Benedikt Schnurr\"><div class=\"overlay\"><h2>Benedikt Schnurr (24), <br> Kommunikationsdesigner</h2><span class=\"desc\">" +
         "Am liebsten bereist er St&auml;dte. Die sch&ouml;nsten sind mit viel Wasser drum herum. So z&auml;hlen Venedig, Hamburg, Amsterdam und nat&uuml;rlich Konstanz zu seinen absoluten Favoriten.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/julien.jpg\" alt=\"Julien Kuny\"><div class=\"overlay\"><h2>Julien Kuny (22), <br> Kommunikationsdesigner</h2><span class=\"desc\">" +
-        "Ist von der eigenen Hausparty abgehauen um mit dem bestem Freund ans italienischem Mittelmeer zu fahren. Neue St&auml;dte und Orte, besonders die am Wasser gelegenen ziehen ihn an, sei es London, Amsterdam, Hamburg oder Konstanz.</span></div></div>" ,
+        "Ist von der eigenen Hausparty abgehauen um mit dem bestem Freund ans italienischem Mittelmeer zu fahren. Neue St&auml;dte und Orte, besonders die am Wasser gelegenen ziehen ihn an, sei es London, Amsterdam, Hamburg oder Konstanz.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/pascal.jpg\" alt=\"Pascal R&uuml;ttenauer\"><div class=\"overlay\"><h2>Pascal \"Ayin\" R&uuml;ttenauer (23), Kommunikationsdesigner</h2><span class=\"desc\">" +
         "Entspricht voll dem Cliche, dass alle Asiaten Kung Fu k&ouml;nnen. Hat Konstanz erst lieben gelernt als er von einem Jahr Shanghai zur&uuml;ckkam. W&auml;re am liebsten mehr in Hong Kong oder auf Reisen. In der Zwischenzeit &uuml;bt er flei&szlig;ig weiter sein Kame-Hame-Ha... bisher vergeblich...</span></div></div>",
@@ -29,7 +29,7 @@ $(document).ready(function () {
         "War schon in vielen deutschen St&auml;dten, ohne etwas von ihnen zu sehen. Bevorzugt Sommer &uuml;ber Winter, Wasser &uuml;ber Schnee.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/nikolai.jpg\" alt=\"Nicolai L&ouml;ffler\"><div class=\"overlay\"><h2>Nicolai L&ouml;ffler (23),<br> Software enigneer</h2><span class=\"desc\">" +
-        "Er reist regelm&auml;&szlig;ig mit Mitfahrgelegenheiten durch Deutschland und f&uuml;hlt sich eigentlich &uuml;berall Zuhause. Eine gem&uuml;tliche Couch zieht er dabei stets einem Hotel vor.Seine Lieblingsreiseziele sind Hamburg, Berlin und Freiburg.</span></div></div>",
+        "Er reist regelm&auml;&szlig;ig mit Mitfahrgelegenheiten durch Deutschland und f&uuml;hlt sich eigentlich &uuml;berall Zuhause. Eine gem&uuml;tliche Couch zieht er dabei stets einem Hotel vor. Seine Lieblingsreiseziele sind Hamburg, Berlin und Freiburg.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/steffen.jpg\" alt=\"Steffen Gorenflo\"><div class=\"overlay\"><h2>Steffen Gorrenflo (27),<br> Software enigneer</h2><span class=\"desc\">" +
         "Geht gern dahin wo es warm ist. Deshalb ging es auch schon nach Mittel- und S&uuml;damerika. Aber da es im Sommer in Konstanz auch warm ist, bleibt er auch am liebsten am sch&ouml;nen Bodensee und geht segeln.</span></div></div>",
@@ -45,7 +45,7 @@ $(document).ready(function () {
     var menu = $('.menu-wrapper');
 
     function shuffle(array) {
-        var currentIndex = array.length, temporaryValue, randomIndex ;
+        var currentIndex = array.length, temporaryValue, randomIndex;
         while (0 !== currentIndex) {
 
             randomIndex = Math.floor(Math.random() * currentIndex);
@@ -61,8 +61,8 @@ $(document).ready(function () {
 
     var shuffledProfiles = shuffle(profiles);
 
-    $( "div.profiles" )
-        .html( shuffledProfiles.join("") );
+    $("div.profiles")
+        .html(shuffledProfiles.join(""));
 
     fixedMenu();
 
@@ -130,5 +130,39 @@ $(document).ready(function () {
                 .end().filter("[href=#" + id + "]").parent().addClass("active");
         }
     });
+
+    // registration
+    $(".registration-submit").click(function (event) {
+        event.preventDefault();
+        console.log(event);
+
+
+        var $form = $("#registration");
+
+        var register= {
+            name : $form.find('input[name="name"]').val(),
+            mail : $form.find('input[name="email"]').val()
+        };
+
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3030/register', // TODO: change to relative later
+            contentType: 'application/json',
+            data: JSON.stringify(register),
+            success: registrationSuccess,
+            error: registrationError,
+            processData: false
+        });
+    });
+
+    function registrationSuccess() {
+        console.log('Success')
+    }
+
+    function registrationError() {
+        console.log('Error')
+    }
+
 
 });
