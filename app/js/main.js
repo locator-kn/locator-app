@@ -145,7 +145,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: '/project/register',
+            url: '/project/mail/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
