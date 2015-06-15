@@ -133,17 +133,31 @@ $(document).ready(function () {
 
     // registration
 
-    var errorBorder = {border: "1px solid #FF0000"};
+    var errorBorder = {border: "1.5px solid #FF0000"};
     var normalBorder = {border: "1px solid #e6e6e6"}
 
     $(".registration-submit").click(function (event) {
         event.preventDefault();
 
         var $form = $("#registration");
+        var name = $form.find('input[name="name"]');
+        var mail = $form.find('input[name="email"]');
+
+        name.css(normalBorder);
+        mail.css(normalBorder);
+
+
+        if (!name.val()) {
+            name.css(errorBorder);
+            return;
+        } else if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
+            mail.css(errorBorder);
+            return;
+        }
 
         var register = {
-            name: $form.find('input[name="name"]').val(),
-            mail: $form.find('input[name="email"]').val()
+            name: name.val(),
+            mail: mail.val()
         };
 
 
@@ -244,14 +258,14 @@ $(document).ready(function () {
         mail = $form.find('input[name="email"]').val('');
         subject = $form.find('input[name="subject"]').val('');
         message = $form.find('textarea[name="message"]').val('');
-        setTimeout(function() {
+        setTimeout(function () {
             $(".success-feedback").fadeOut("thanks");
         }, 3000)
     }
 
     function feedbacknError(resp) {
         $(".error-feedback").fadeIn("generic");
-        setTimeout(function() {
+        setTimeout(function () {
             $(".error-feedback").fadeOut("thanks");
         }, 3000)
 
