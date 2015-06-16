@@ -819,6 +819,12 @@ img.social {
     color: #f64747;
 }
 
+.unsubscribe {
+    height: 100vh;
+    background: url('../img/bg/intro.jpg');
+    background-size: cover;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
