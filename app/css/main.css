@@ -620,13 +620,14 @@ nav ul {
 }
 
 .quote {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     background-size: cover;
-    background-color: #f3f3f3;;
+    background-color: #f3f3f3;
     background-position: bottom;
     font-weight: 300;
     color: black;
+    margin-bottom: 50px;
     font-size: 34px;
     text-align: center;
 }
