@@ -163,7 +163,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: '/project/mail/register',
+            url: '/mail/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
             success: registrationSuccess,
@@ -242,7 +242,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: '/project/mail/feedback',
+            url: '/mail/feedback',
             contentType: 'application/json',
             data: JSON.stringify(feedback),
             success: feedbackSuccess,
