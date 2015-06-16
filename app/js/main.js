@@ -132,14 +132,32 @@ $(document).ready(function () {
     });
 
     // registration
+
+    var errorBorder = {border: "1.5px solid #FF0000"};
+    var normalBorder = {border: "1px solid #e6e6e6"};
+
     $(".registration-submit").click(function (event) {
         event.preventDefault();
 
         var $form = $("#registration");
+        var name = $form.find('input[name="name"]');
+        var mail = $form.find('input[name="email"]');
+
+        name.css(normalBorder);
+        mail.css(normalBorder);
+
+
+        if (!name.val()) {
+            name.css(errorBorder);
+            return;
+        } else if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
+            mail.css(errorBorder);
+            return;
+        }
 
         var register = {
-            name: $form.find('input[name="name"]').val(),
-            mail: $form.find('input[name="email"]').val()
+            name: name.val(),
+            mail: mail.val()
         };
 
 
@@ -177,13 +195,81 @@ $(document).ready(function () {
 
     }
 
+    // pseudo registration
     $(".registration-submit-bottom").click(function (e) {
-        var offsetTop = $('#').offset().top - topMenuHeight + 1;
         $('html, body').stop().animate({
-            scrollTop: offsetTop
+            scrollTop: 0
         }, 800);
         e.preventDefault();
     });
+
+
+    // feedback
+    $(".feedback-submit").click(function (event) {
+        event.preventDefault();
+
+        var $form = $("#forms");
+
+        var name = $form.find('input[name="name"]');
+        var mail = $form.find('input[name="email"]');
+        var subject = $form.find('input[name="subject"]');
+        var message = $form.find('textarea[name="message"]');
+
+        name.css(normalBorder);
+        mail.css(normalBorder);
+        message.css(normalBorder);
+
+
+        if (!name.val()) {
+            name.css(errorBorder);
+            return;
+        } else if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
+            mail.css(errorBorder);
+            return;
+        } else if (!message.val()) {
+            message.css(errorBorder);
+            return;
+        } else if (!subject.val()) {
+            // allow empty subject
+        }
+
+        var feedback = {
+            name: name.val(),
+            mail: mail.val(),
+            subject: subject.val() || 'empty subject',
+            message: message.val()
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: '/project/mail/feedback',
+            contentType: 'application/json',
+            data: JSON.stringify(feedback),
+            success: feedbackSuccess,
+            error: feedbacknError,
+            processData: false
+        });
+    });
+
+    function feedbackSuccess() {
+        $(".success-feedback").fadeIn("thanks");
+        var $form = $("#forms");
+        $form.find('input[name="name"]').val('');
+        mail = $form.find('input[name="email"]').val('');
+        subject = $form.find('input[name="subject"]').val('');
+        message = $form.find('textarea[name="message"]').val('');
+        setTimeout(function () {
+            $(".success-feedback").fadeOut("thanks");
+        }, 3000)
+    }
+
+    function feedbacknError(resp) {
+        $(".error-feedback").fadeIn("generic");
+        setTimeout(function () {
+            $(".error-feedback").fadeOut("thanks");
+        }, 3000)
+
+    }
 
 
 });
