@@ -736,6 +736,9 @@ img.social {
 .registration-submit {
     width: 100%;
     cursor: pointer;
+
+    color: white;
+    background: none;
 }
 
 .registration-submit-bottom {
