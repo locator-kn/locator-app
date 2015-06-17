@@ -845,7 +845,7 @@ a:hover {
 
 @media (max-width: 767px) {
     .container.description {
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     #project, #contact-us {
