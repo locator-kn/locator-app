@@ -620,20 +620,21 @@ nav ul {
 }
 
 .quote {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     background-size: cover;
-    background-color: #f3f3f3;;
+    background-color: #f3f3f3;
     background-position: bottom;
     font-weight: 300;
     color: black;
+    margin-bottom: 50px;
     font-size: 34px;
     text-align: center;
 }
 
 .quote h3 {
     line-height: 130%;
-    margin-bottom:
+    font-size: 20px;
 }
 
 ul li a:hover {
@@ -739,6 +740,10 @@ img.social {
 
 .registration-submit-bottom {
     margin: 0 auto;
+    background-color: #f3f3f3;
+    height: 48px;
+    border: 1px solid #e6e6e6;
+    color: #808080;
 }
 
 .registration-container {
@@ -761,7 +766,8 @@ img.social {
 }
 
 .registration {
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
     background: url('../img/bg/imm012_11.jpg');
@@ -771,6 +777,11 @@ img.social {
     color: white;
     font-size: 34px;
     text-align: center;
+}
+
+.registration h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .success, .error {
@@ -792,7 +803,7 @@ img.social {
     display: none;
 }
 
-.error.generic, .error.conflict, .error.generic .generic, .error.conflict .conflict, .error-feedback.generic,  .error-feedback .generic {
+.error.generic, .error.conflict, .error.generic .generic, .error.conflict .conflict, .error-feedback.generic, .error-feedback .generic {
     display: block;
 }
 
@@ -808,6 +819,30 @@ img.social {
     color: #f64747;
 }
 
+.unsubscribe {
+    height: 100vh;
+    background: url('../img/bg/intro.jpg');
+    background-size: cover;
+}
+
+a {
+    color: #f64747;
+}
+
+a:hover {
+    color: #f64747;
+}
+
+.registration-header p {
+    font-size: 20px;
+}
+
+form#registration {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
@@ -815,6 +850,18 @@ img.social {
 }
 
 @media (max-width: 767px) {
+    .container.description {
+        padding-top: 50px;
+    }
+
+    #project, #contact-us {
+        padding-top: 50px;
+    }
+
+    .registration-container input {
+        margin-bottom: 5px;
+    }
+
     .footer ul li {
         width: 100%;
     }
