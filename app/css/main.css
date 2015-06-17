@@ -944,4 +944,7 @@ form#registration {
     .logo-container {
         margin-top: 25%;
     }
+    img.logo {
+        max-width: 70%;
+    }
 }
