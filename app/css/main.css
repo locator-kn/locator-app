@@ -295,7 +295,7 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-transform: lowercase
+    text-transform: lowercase !important;
 }
 
 .responsive-img {
@@ -589,7 +589,7 @@ nav ul {
 }
 
 .footer .logo {
-    padding: 50px 0 40px 0;
+    padding: 60px 0 40px 0;
     max-width: 28%;
 }
 
@@ -854,7 +854,7 @@ a:hover {
 }
 
 .registration-header p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 0 27px;
 }
 
@@ -880,8 +880,8 @@ form#registration {
 
 .registration-submit-bottom, .feedback-submit {
     color: white;
-    background: #33c4b7;
-    border: 1px solid #33c4b7;
+    background: #343434;
+    border: 1px solid #343434;
 }
 
 .registration-submit-bottom:hover, .feedback-submit:hover {
