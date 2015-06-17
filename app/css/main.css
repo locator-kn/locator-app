@@ -861,6 +861,32 @@ form#registration {
     width: 100%;
 }
 
+.registration-submit {
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background: #33c4b7;
+    border: 1px solid #33c4b7;
+}
+
+.registration-submit:hover {
+    background-color: #ff4637;
+    border: 1px solid #ff4637;
+    color: white;
+}
+
+.registration-submit-bottom, .feedback-submit {
+    color: white;
+    background: #33c4b7;
+    border: 1px solid #33c4b7;
+}
+
+.registration-submit-bottom:hover, .feedback-submit:hover {
+    background-color: #ff4637;
+    border: 1px solid #ff4637;
+    color: white;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
