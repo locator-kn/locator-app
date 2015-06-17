@@ -295,7 +295,7 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-transform: lowercase
+    text-transform: lowercase !important;
 }
 
 .responsive-img {
