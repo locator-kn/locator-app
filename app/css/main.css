@@ -840,6 +840,7 @@ a:hover {
 form#registration {
     float: left;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 @media (max-width: 1199px) {
