@@ -23,7 +23,7 @@ $(document).ready(function () {
         "Entspricht voll dem Cliche, dass alle Asiaten Kung Fu k&ouml;nnen. Hat Konstanz erst lieben gelernt als er von einem Jahr Shanghai zur&uuml;ckkam. W&auml;re am liebsten mehr in Hong Kong oder auf Reisen. In der Zwischenzeit &uuml;bt er flei&szlig;ig weiter sein Kame-Hame-Ha... bisher vergeblich...</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timotheus.jpg\" alt=\"Timotheus Ruprecht\"><div class=\"overlay\"><h2>Timotheus Ruprecht (26),<br> Software enigneer</h2><span class=\"desc\">" +
-        "Einmal im Jahr geht seine Reise in ein Land in dem er noch nicht war. In Deutschland wird er am meisten von M&uuml;nchen angezogen, wo er die Stadt durch seine Freunde kennen und lieben gelernt hat.</span></div></div>",
+        "Versucht jedes Jahr ein neues Land zu erkunden. Das n&auml;chste Ziel ist Australien. In Deutschland reist er am liebsten mit dem Fernbus nach M&uuml;nchen.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timo.jpg\" alt=\"Timo Weiss\"><div class=\"overlay\"><h2>Timo Weiss (25),<br> Software enigneer</h2><span class=\"desc\">" +
         "War schon in vielen deutschen St&auml;dten, ohne etwas von ihnen zu sehen. Bevorzugt Sommer &uuml;ber Winter, Wasser &uuml;ber Schnee.</span></div></div>",
