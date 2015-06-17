@@ -825,6 +825,18 @@ img.social {
     background-size: cover;
 }
 
+a {
+    color: #f64747;
+}
+
+a:hover {
+    color: #f64747;
+}
+
+.registration-header p {
+    font-size: 20px;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
@@ -832,6 +844,18 @@ img.social {
 }
 
 @media (max-width: 767px) {
+    .container.description {
+        padding-top: 30px;
+    }
+
+    #project, #contact-us {
+        padding-top: 50px;
+    }
+
+    .registration-container input {
+        margin-bottom: 5px;
+    }
+
     .footer ul li {
         width: 100%;
     }
