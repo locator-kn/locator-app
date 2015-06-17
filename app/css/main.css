@@ -589,7 +589,8 @@ nav ul {
 }
 
 .footer .logo {
-    padding: 40px 0;
+    padding: 50px 0 40px 0;
+    max-width: 28%;
 }
 
 .footer nav {
