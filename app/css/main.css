@@ -482,10 +482,10 @@ input, textarea, select {
     margin-bottom: 15px;
     background: transparent;
     color: #808080;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 h2.section-title {
@@ -738,14 +738,24 @@ img.social {
     cursor: pointer;
 
     color: white;
+    background: transparent;
+}
+
+.registration-submit:hover {
     background: none;
+    color: #808080;
+    background-color: #f3f3f3;
 }
 
 .registration-submit-bottom {
     margin: 0 auto;
-    background-color: #f3f3f3;
     height: 48px;
     border: 1px solid #e6e6e6;
+    color: white;
+}
+
+.registration-submit-bottom:hover {
+    background-color: #f3f3f3;
     color: #808080;
 }
 
@@ -754,11 +764,16 @@ img.social {
     width: 100%;
 }
 
-.registration-container input {
+.registration-container .input input {
     background-color: #f3f3f3;
     height: 48px;
     border: 1px solid #e6e6e6;
     margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+input.registration-submit {
+    height: 48px;
 }
 
 .registration-header {
@@ -842,7 +857,7 @@ a:hover {
 
 form#registration {
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
