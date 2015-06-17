@@ -321,6 +321,7 @@ body {
 
 img.logo {
     margin: 0 auto;
+    max-width: 40%
 }
 
 .description p {
