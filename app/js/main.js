@@ -1,17 +1,9 @@
 $(document).ready(function () {
 
 
-    var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
-
-    if (iOS && $('.start').css('min-height') > 2000) {
-        $('.start').css('min-height', '0');
-    }
-
-    if (iOS) {
-        $('.member').bind('touchstart touchend', function (e) {
-            e.preventDefault();
-            $(this).toggleClass('hover_effect');
-        });
+    var IS_MOBILE_SAFARI_7 = !!navigator.userAgent.match(/i(Pad|Phone|Pod).+(Version\/7\.\d+ Mobile)/i);
+    if (IS_MOBILE_SAFARI_7) {
+        $('.start').addClass('manualheight');
     }
 
 
