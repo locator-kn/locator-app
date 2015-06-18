@@ -7,6 +7,14 @@ $(document).ready(function () {
         $('.start').css('min-height', '0');
     }
 
+    if (iOS) {
+        $('.member').hover(function () {
+            $(".overlay").hide();
+        }, function () {
+            $(".overlay").show();
+        });
+    }
+
 
     var profiles = [
         "<div class=\"member col-sm-6 col-md-4\"> <img class=\"img-responsive\" src=\"img/team/lukas.jpg\" alt=\"Lukas L&ouml;gler\"><div class=\"overlay\"><h2>Lukas L&ouml;gler (28), <br> Kommumikationsdesigner </h2><span class=\"desc\">" +
@@ -92,13 +100,13 @@ $(document).ready(function () {
     }
 
 
-    // Cache selectors
+// Cache selectors
     var lastId,
         topMenu = $("#navigation"),
         topMenuHeight = 1,
-    // All list items
+// All list items
         menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
+// Anchors corresponding to menu items
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
             if (item.length) {
@@ -139,7 +147,7 @@ $(document).ready(function () {
         }
     });
 
-    // registration
+// registration
 
     var errorBorder = {border: "1.5px solid #FF0000"};
     var normalBorder = {border: "1px solid #e6e6e6"};
@@ -203,7 +211,7 @@ $(document).ready(function () {
 
     }
 
-    // pseudo registration
+// pseudo registration
     $(".registration-submit-bottom").click(function (e) {
         $('html, body').stop().animate({
             scrollTop: 0
@@ -212,7 +220,7 @@ $(document).ready(function () {
     });
 
 
-    // feedback
+// feedback
     $(".feedback-submit").click(function (event) {
         event.preventDefault();
 
@@ -280,4 +288,5 @@ $(document).ready(function () {
     }
 
 
-});
+})
+;
