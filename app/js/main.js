@@ -8,10 +8,9 @@ $(document).ready(function () {
     }
 
     if (iOS) {
-        $('.member').hover(function () {
-            $(".overlay").hide();
-        }, function () {
-            $(".overlay").show();
+        $('.member').bind('touchstart touchend', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('hover_effect');
         });
     }
 

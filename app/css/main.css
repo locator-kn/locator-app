@@ -860,6 +860,18 @@ input.registration-submit {
     background-size: cover;
 }
 
+.impressum {
+    background: url('../img/bg/intro.jpg');
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.impressum-container ul {
+    padding-left: 0 !important;
+    padding-bottom: 20px;
+}
+
 a {
     color: #ff4637;
 }
@@ -928,6 +940,11 @@ form#registration {
 
 
 @media (max-width: 767px) {
+    .registration-container h2, .registration-container h3 {
+        font-size: 21px;
+        text-align: left;
+    }
+
     .container.description {
         padding-top: 50px;
     }
