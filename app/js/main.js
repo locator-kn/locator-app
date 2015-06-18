@@ -2,10 +2,7 @@ $(document).ready(function () {
 
 
     var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
-    if (iOS) {
-        alert('yolo');
-    }
-
+    
     if (iOS && $('.start').css('min-height') > 2000) {
         $('.start').css('min-height', '0');
     }
