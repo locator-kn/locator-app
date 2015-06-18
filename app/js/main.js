@@ -2,11 +2,13 @@ $(document).ready(function () {
 
 
     var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
-    if (true && $('.start').css('min-height') == 'calc(100vh - 80px)') {
-        $('.start').css('min-height', '0');
+    if (iOS) {
+        alert('yolo');
     }
 
-    if ($('.start').css('min-height') > 2000);
+    if (iOS && $('.start').css('min-height') > 2000) {
+        $('.start').css('min-height', '0');
+    }
 
 
     var profiles = [
