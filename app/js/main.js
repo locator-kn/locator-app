@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+
+    var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
+    if (true && $('.start').css('min-height') == 'calc(100vh - 80px)') {
+        $('.start').css('min-height', '0');
+    }
+
+    if ($('.start').css('min-height') > 2000);
+
+
     var profiles = [
         "<div class=\"member col-sm-6 col-md-4\"> <img class=\"img-responsive\" src=\"img/team/lukas.jpg\" alt=\"Lukas L&ouml;gler\"><div class=\"overlay\"><h2>Lukas L&ouml;gler (28), <br> Kommumikationsdesigner </h2><span class=\"desc\">" +
         "Will die ganze Welt sehen und daf&uuml;r so wenig wie m&ouml;glich bezahlen. Notfalls schl&auml;ft er am Stra&szlig;enrand. K&ouml;nnte sich durch jedes Land futtern und hat keine Scheu Grenzen auszuloten.</span> </div></div>",

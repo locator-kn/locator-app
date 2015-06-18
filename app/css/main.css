@@ -906,6 +906,22 @@ form#registration {
     }
 }
 
+
+
+
+/* SM */
+@media (max-width: 991px) {
+    img.logo {
+        max-width: 40%;
+    }
+
+    .logo-container {
+        margin-top: 20%;
+    }
+}
+
+
+
 @media (max-width: 767px) {
     .container.description {
         padding-top: 50px;
