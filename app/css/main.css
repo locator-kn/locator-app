@@ -361,7 +361,7 @@ img.logo {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(255, 0, 0, 0.5);
+    background: rgba(255, 70, 55, 0.5);
     border-left: 7px solid white;
     border-right: 7px solid white;
     padding: 15px;
@@ -435,7 +435,7 @@ img.logo {
 }
 
 .kontakt-teaser h3:after {
-    background: #f64747;
+    background: #ff4637;
     position: relative;
     display: block;
     content: "";
@@ -498,7 +498,7 @@ h2.section-title {
 }
 
 .section-title:after {
-    background: #f64747;
+    background: #ff4637;
 }
 
 .section-title:after {
@@ -508,7 +508,7 @@ h2.section-title {
     height: 2px;
     width: 30px;
     margin: 10px auto 20px;
-    background: #f64747;
+    background: #ff4637;
 }
 
 .team h2.section-title {
@@ -603,7 +603,7 @@ nav ul {
 }
 
 .separator {
-    background: #f64747;
+    background: #ff4637;
     position: relative;
     display: block;
     content: "";
@@ -645,7 +645,7 @@ ul li a:hover {
 }
 
 ul li a:hover, ul li.active a {
-    color: #f64747;
+    color: #ff4637;
 }
 
 ul li a {
@@ -654,7 +654,7 @@ ul li a {
 
 .impressum:hover {
     text-decoration: none;
-    color: #f64747;
+    color: #ff4637;
 }
 
 #project, #contact-us {
@@ -816,7 +816,7 @@ input.registration-submit {
 }
 
 .error {
-    color: #f64747;
+    color: #ff4637;
 }
 
 .conflict, .generic {
@@ -836,7 +836,7 @@ input.registration-submit {
 }
 
 .error-feedback {
-    color: #f64747;
+    color: #ff4637;
 }
 
 .unsubscribe {
@@ -846,11 +846,11 @@ input.registration-submit {
 }
 
 a {
-    color: #f64747;
+    color:#ff4637;
 }
 
 a:hover {
-    color: #f64747;
+    color: #ff4637;
 }
 
 .registration-header p {
