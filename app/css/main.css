@@ -381,6 +381,7 @@ img.logo {
     border-right: 7px solid white;
     padding: 15px;
     padding-top: 100px;
+    visibility: hidden;
 }
 
 .team {
@@ -422,6 +423,7 @@ img.logo {
 
 .team .member:hover .overlay {
     opacity: 1;
+    visibility: visible;
 }
 
 .team .member .overlay h2 {
