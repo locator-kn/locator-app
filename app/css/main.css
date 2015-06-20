@@ -567,7 +567,7 @@ h2.section-title {
     color: #808080;
     font-size: 12px;
     line-height: 80px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 1.5px;
 }
 
@@ -712,7 +712,7 @@ a:focus {
 
 .project-description h2 {
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 ul {
