@@ -32,19 +32,19 @@ $(document).ready(function () {
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timotheus.jpg\" alt=\"Timotheus Ruprecht\"><div class=\"overlay\"><h2>Timotheus Ruprecht (26),<br> Software enigneer</h2><span class=\"desc\">" +
         "Versucht jedes Jahr ein neues Land zu erkunden. Das n&auml;chste Ziel ist Australien. In Deutschland reist er am liebsten mit dem Fernbus nach M&uuml;nchen.</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timo.jpg\" alt=\"Timo Weiss\"><div class=\"overlay\"><h2>Timo Weiss (25),<br> Software enigneer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timo.jpg\" alt=\"Timo Weiss\"><div class=\"overlay\"><h2>Timo Weiss (25),<br> Software engineer</h2><span class=\"desc\">" +
         "War schon in vielen deutschen St&auml;dten, ohne etwas von ihnen zu sehen. Bevorzugt Sommer &uuml;ber Winter, Wasser &uuml;ber Schnee.</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/nikolai.jpg\" alt=\"Nicolai L&ouml;ffler\"><div class=\"overlay\"><h2>Nicolai L&ouml;ffler (23),<br> Software enigneer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/nikolai.jpg\" alt=\"Nicolai L&ouml;ffler\"><div class=\"overlay\"><h2>Nicolai L&ouml;ffler (23),<br> Software engineer</h2><span class=\"desc\">" +
         "Er reist regelm&auml;&szlig;ig mit Mitfahrgelegenheiten durch Deutschland und f&uuml;hlt sich eigentlich &uuml;berall Zuhause. Eine gem&uuml;tliche Couch zieht er dabei stets einem Hotel vor. Seine Lieblingsreiseziele sind Hamburg, Berlin und Freiburg.</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/steffen.jpg\" alt=\"Steffen Gorenflo\"><div class=\"overlay\"><h2>Steffen Gorrenflo (27),<br> Software enigneer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/steffen.jpg\" alt=\"Steffen Gorenflo\"><div class=\"overlay\"><h2>Steffen Gorrenflo (27),<br> Software engineer</h2><span class=\"desc\">" +
         "Geht gern dahin wo es warm ist. Deshalb ging es auch schon nach Mittel- und S&uuml;damerika. Aber da es im Sommer in Konstanz auch warm ist, bleibt er auch am liebsten am sch&ouml;nen Bodensee und geht segeln.</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/michael.jpg\" alt=\"Michael Knoch\"><div class=\"overlay\"><h2>Michael Knoch (23),<br> Software enigneer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/michael.jpg\" alt=\"Michael Knoch\"><div class=\"overlay\"><h2>Michael Knoch (23),<br> Software engineer</h2><span class=\"desc\">" +
         "Bereist am liebsten Gro&szlig;st&auml;dte um Musik und Kultur zu erleben. Neben seiner gro&szlig;en Liebe zu Berlin gef&auml;llt ihm London, Paris und nat&uuml;rlich die wundersch&ouml;ne Weltmetropole Konstanz.</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/dennis.jpg\" alt=\"Dennis Moosmann\"><div class=\"overlay\"><h2>Dennis Moosmann (26),<br> Software enigneer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/dennis.jpg\" alt=\"Dennis Moosmann\"><div class=\"overlay\"><h2>Dennis Moosmann (26),<br> Software engineer</h2><span class=\"desc\">" +
         "Wenn er w&auml;hrend der Urlaubszeit mal nicht arbeiten muss, zieht es ihn meist in eine Metropole, in der er zuvor noch nicht war. Am besten gefiel es ihm in Hamburg,wo sowohl kulturelle als auch kulinarische Highlights gibt.</span></div></div>"
     ];
 
