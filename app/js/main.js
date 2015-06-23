@@ -29,7 +29,7 @@ $(document).ready(function () {
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/pascal.jpg\" alt=\"Pascal R&uuml;ttenauer\"><div class=\"overlay\"><h2>Pascal \"Ayin\" R&uuml;ttenauer (23), Kommunikationsdesigner</h2><span class=\"desc\">" +
         "Entspricht voll dem Cliche, dass alle Asiaten Kung Fu k&ouml;nnen. Hat Konstanz erst lieben gelernt als er von einem Jahr Shanghai zur&uuml;ckkam. W&auml;re am liebsten mehr in Hong Kong oder auf Reisen. In der Zwischenzeit &uuml;bt er flei&szlig;ig weiter sein Kame-Hame-Ha... bisher vergeblich...</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timotheus.jpg\" alt=\"Timotheus Ruprecht\"><div class=\"overlay\"><h2>Timotheus Ruprecht (26),<br> Software enigneer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timotheus.jpg\" alt=\"Timotheus Ruprecht\"><div class=\"overlay\"><h2>Timotheus Ruprecht (26),<br> Software engineer</h2><span class=\"desc\">" +
         "Versucht jedes Jahr ein neues Land zu erkunden. Das n&auml;chste Ziel ist Australien. In Deutschland reist er am liebsten mit dem Fernbus nach M&uuml;nchen.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/timo.jpg\" alt=\"Timo Weiss\"><div class=\"overlay\"><h2>Timo Weiss (25),<br> Software engineer</h2><span class=\"desc\">" +
