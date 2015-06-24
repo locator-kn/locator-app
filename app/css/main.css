@@ -300,7 +300,6 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-transform: lowercase !important;
 }
 
 .responsive-img {
@@ -463,7 +462,6 @@ img.logo {
 
 .kontakt-teaser h3 {
     text-align: center;
-    text-transform: lowercase;
     font-size: 41px;
     line-height: 70px;
     font-weight: 700;
@@ -508,7 +506,6 @@ input, textarea, select {
 }
 
 h2.section-title {
-    text-transform: lowercase;
     font-size: 41px;
     line-height: 70px;
     font-weight: 700;
@@ -567,7 +564,7 @@ h2.section-title {
     color: #808080;
     font-size: 14px;
     line-height: 80px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
@@ -712,7 +709,6 @@ a:focus {
 
 .project-description h2 {
     font-size: 18px;
-    text-transform: lowercase;
 }
 
 ul {
