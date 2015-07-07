@@ -921,8 +921,13 @@ form#registration {
 
 .video-container {
     max-width: 829px;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.video-fluid {
+    background-color: #f3f3f3;
+    margin-top: 45px;
 }
 
 .video-container iframe {
