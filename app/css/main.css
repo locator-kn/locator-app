@@ -919,14 +919,26 @@ form#registration {
     color: white;
 }
 
+.video-container {
+    max-width: 829px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.video-fluid {
+    background-color: #f3f3f3;
+    margin-top: 45px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+}
+
 @media (max-width: 1199px) {
     .team .member .overlay {
         padding-top: 30px;
     }
 }
-
-
-
 
 /* SM */
 @media (max-width: 991px) {
@@ -938,8 +950,6 @@ form#registration {
         margin-top: 20%;
     }
 }
-
-
 
 @media (max-width: 767px) {
     .registration-container h2, .registration-container h3 {
