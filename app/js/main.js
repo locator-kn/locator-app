@@ -8,6 +8,9 @@ $(document).ready(function () {
 
 
     var profiles = [
+        "<div class=\"member col-sm-6 col-md-4\"> <img class=\"img-responsive\" src=\"img/team/jo.jpg\" alt=\"Jo Wickert\"><div class=\"overlay\"><h2>Prof. Jo Wickert<br> Kommumikationsdesigner </h2><span class=\"desc\">" +
+        "Pendelt zwischen Berlin, Meersburg und Konstanz</span> </div></div>",
+
         "<div class=\"member col-sm-6 col-md-4\"> <img class=\"img-responsive\" src=\"img/team/lukas.jpg\" alt=\"Lukas L&ouml;gler\"><div class=\"overlay\"><h2>Lukas L&ouml;gler (28), <br> Kommumikationsdesigner </h2><span class=\"desc\">" +
         "Will die ganze Welt sehen und daf&uuml;r so wenig wie m&ouml;glich bezahlen. Notfalls schl&auml;ft er am Stra&szlig;enrand. K&ouml;nnte sich durch jedes Land futtern und hat keine Scheu Grenzen auszuloten.</span> </div></div>",
 
