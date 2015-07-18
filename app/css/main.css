@@ -796,6 +796,7 @@ input.registration-submit {
     color: white;
     font-size: 25px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .registration {
@@ -810,6 +811,16 @@ input.registration-submit {
     color: white;
     font-size: 34px;
     text-align: center;
+}
+
+.registration-button {
+    height: 50px;
+    background: #33c4b7;
+    color: white;
+    line-height: 50px;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .registration h3 {
