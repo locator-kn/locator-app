@@ -44,7 +44,7 @@ $(document).ready(function () {
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/nikolai.jpg\" alt=\"Nicolai L&ouml;ffler\"><div class=\"overlay\"><h2>Nicolai L&ouml;ffler (23),<br> Software engineer</h2><span class=\"desc\">" +
         "Er reist regelm&auml;&szlig;ig mit Mitfahrgelegenheiten durch Deutschland und f&uuml;hlt sich eigentlich &uuml;berall zu Hause. Eine gem&uuml;tliche Couch zieht er dabei stets einem Hotel vor. Seine Lieblingsreiseziele sind Hamburg, Berlin und Freiburg.</span></div></div>",
 
-        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/steffen.jpg\" alt=\"Steffen Gorenflo\"><div class=\"overlay\"><h2>Steffen Gorrenflo (27),<br> Software engineer</h2><span class=\"desc\">" +
+        "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/steffen.jpg\" alt=\"Steffen Gorenflo\"><div class=\"overlay\"><h2>Steffen Gorrenflo (28),<br> Software engineer</h2><span class=\"desc\">" +
         "Geht gern dahin wo es warm ist. Deshalb ging es auch schon nach Mittel- und S&uuml;damerika. Aber da es im Sommer in Konstanz auch warm ist, bleibt er auch am liebsten am sch&ouml;nen Bodensee und geht segeln.</span></div></div>",
 
         "<div class=\"member col-sm-6 col-md-4\"><img class=\"img-responsive\" src=\"img/team/michael.jpg\" alt=\"Michael Knoch\"><div class=\"overlay\"><h2>Michael Knoch (23),<br> Software engineer</h2><span class=\"desc\">" +
